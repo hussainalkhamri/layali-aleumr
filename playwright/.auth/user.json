@@ -1,0 +1,25 @@
+{
+  "cookies": [
+    {
+      "name": "XSRF-TOKEN",
+      "value": "eyJpdiI6IkIzZVora0wyaUF6eFV1dWI0K243M2c9PSIsInZhbHVlIjoiUERHSUpZMEhQeUtaeFJDSWtGd2ZHcG9OblgwNHRFMStxeXFGTTFQNmkvUmUzMmVaYzExeUYyU3B4dTdHaG8xS2NZc0huY0xpTy82N2tVc1dTVldJa2dhb0hLci9tTUNVRWxod2tPWWM3L1ZaUndsT3JUZm5vMmtEdFJMaTFOTysiLCJtYWMiOiJhZjA5Nzc3NWQzMzdlNGNiZmI3YmViN2ZmYWMzN2YzZDlhZGRjNDQzZmIwOWM0MjU1ZGU1MmY2MjI4YjI5ZTY4IiwidGFnIjoiIn0%3D",
+      "domain": "localhost",
+      "path": "/",
+      "expires": 1777373656.60571,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ntham-lyaly-alaamr-session",
+      "value": "eyJpdiI6Ilpjc1YxcVJNNTNJbS9IbVFYUDRqNXc9PSIsInZhbHVlIjoieGw0UFJvTUQ5S1JUU0ZEWUFCVUtyR1RsalkrbFRmcXBPNUUrWHZPVzZzWk9DSlA4VGdJZWQ4NzNTVTFHYk51TmowcWJGSXAyZzdEMjJNaEg1d3JrL0xHdGJpQ09qQkdBbHNFRzI0aW9odnlSMmZCZ0c1SndUVzV3VEQ4YUxWWlEiLCJtYWMiOiI2YmUxODMxZjE2ZWE4NjQxNTcxMjU2YWY0NjkyMTkzNGQyYzA0YWIzMjhkNzM4MjIyOGEwZjRkNzVhZTNlN2RmIiwidGFnIjoiIn0%3D",
+      "domain": "localhost",
+      "path": "/",
+      "expires": 1777373656.605951,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

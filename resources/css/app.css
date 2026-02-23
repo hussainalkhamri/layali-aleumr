@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary-50: #fcf4f5;
+  --color-primary-100: #f6e6e8;
+  --color-primary-200: #ecccd1;
+  --color-primary-300: #dfa8b0;
+  --color-primary-400: #cd7b88;
+  --color-primary-500: #ba5464;
+  --color-primary-600: #a13d4c;
+  --color-primary-700: #862f3c;
+  --color-primary-800: #702934;
+  --color-primary-900: #5f2730;
+  --color-primary-950: #331117;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* RTL support */
+[dir="rtl"] * {
+    font-family: 'Tajawal', 'Cairo', system-ui, sans-serif;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.dark ::-webkit-scrollbar-track { background: #111827; }
+.dark ::-webkit-scrollbar-thumb { background: #374151; }
+.dark ::-webkit-scrollbar-thumb:hover { background: #4B5563; }
+
+/* Global input styles for better visibility (Light Mode focus) */
+input, select, textarea {
+    border: 1px solid #d1d5db !important; /* gray-300 */
+    transition: all 0.2s ease-in-out;
+}
+
+.dark input, .dark select, .dark textarea {
+    border: 1px solid #374151 !important; /* gray-700 */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-primary-500) !important;
+    box-shadow: 0 0 0 2px rgba(186, 84, 100, 0.1);
+}
+
+/* Ensure all interactive elements have pointer cursor */
+button, 
+[type="button"], 
+[type="submit"], 
+[role="button"], 
+a, 
+[x-on\:click], 
+[\@click] {
+    cursor: pointer !important;
+}
