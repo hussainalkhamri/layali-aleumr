@@ -1,58 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Layali Al-Omr (Ghaseel Plus) Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Inertia.js](https://img.shields.io/badge/Inertia.js-9553E9?style=for-the-badge&logo=inertia&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-## About Laravel
+A comprehensive, full-stack ERP and Management System designed for the car washing and detailing industry. **Layali Al-Omr** (also known as Ghaseel Plus) streamlines operations across multiple branches, managing users, daily invoices, financial expenses, and comprehensive audit logs.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+*Note: This repository was recently initialized for portfolio showcasing. The codebase was primarily developed in a self-hosted organizational environment between February and May 2026, and its history has been consolidated here.*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Multi-Branch Architecture**: Manage operations, revenues, and expenses across different physical branch locations independently.
+- **Role-Based Access Control (RBAC)**: Secure access using specific user roles (Admin, Cashier, Branch Manager) ensuring data integrity and operational security.
+- **Invoice & Receipt Management**: Create, track, and print detailed customer invoices and booking receipts with automated calculations.
+- **Financial Tracking**: Comprehensive expense logging to track operational costs, paired with revenue tracking from invoices.
+- **Audit Logging**: An immutable audit log system that tracks critical user actions for accountability and security.
+- **System Insights**: Real-time analytics and performance metrics dashboard for business owners.
+- **Modern SPA Frontend**: Built with React and Inertia.js for lightning-fast, stateless transitions without writing a separate REST API.
 
-## Learning Laravel
+## 🛠️ Technology Stack
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Backend**: Laravel 12 (PHP)
+- **Frontend**: React.js with Inertia.js
+- **Styling**: Tailwind CSS
+- **Database**: MySQL / PostgreSQL
+- **Authentication**: Laravel Session Auth
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📂 Architecture & Documentation
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+To understand the internal structure of the project or if you are looking to contribute, please refer to our internal documentation:
+- [📖 Learning & Architecture Guide](docs/LEARNING_GUIDE.md) - Deep dive into how the system works and how to navigate the codebase.
+- [🚀 Publishing Guidelines](docs/PUBLISHING_GUIDELINES.md) - Guidelines on repository management and what to keep private.
 
-## Agentic Development
+## ⚙️ Installation & Local Setup
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/hussainalkhamri/layali-aleumr.git
+   cd layali-aleumr
+   ```
 
-```bash
-composer require laravel/boost --dev
+2. **Install PHP Dependencies:**
+   ```bash
+   composer install
+   ```
 
-php artisan boost:install
-```
+3. **Install NPM Dependencies:**
+   ```bash
+   npm install
+   ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+4. **Environment Setup:**
+   Copy the example environment file and generate a new application key.
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## Contributing
+5. **Database Setup:**
+   Configure your `.env` with your database credentials, then run the migrations.
+   ```bash
+   php artisan migrate --seed
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6. **Run the Development Servers:**
+   You will need two terminal windows to run both the Laravel backend and Vite frontend build tool.
+   ```bash
+   # Terminal 1: Run the Laravel server
+   php artisan serve
 
-## Code of Conduct
+   # Terminal 2: Run the Vite development server
+   npm run dev
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🔒 Security Vulnerabilities
 
-## Security Vulnerabilities
+If you discover a security vulnerability within this project, please send an e-mail to Hussain via [saleh7ussain1@gmail.com](mailto:saleh7ussain1@gmail.com).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📄 License
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is proprietary software. Unauthorized copying, modification, or distribution is strictly prohibited.
