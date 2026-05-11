@@ -77,7 +77,7 @@ To understand the internal structure of the project or if you are looking to con
 
 ## 🔒 Security Vulnerabilities
 
-If you discover a security vulnerability within this project, please send an e-mail to Hussain via [saleh7ussain1@gmail.com](mailto:saleh7ussain1@gmail.com).
+If you discover a security vulnerability within this project, please send an e-mail to Hussain via [saleh7ussain1@gmail.com](mailto:alhussainalkhamri@gmail.com).
 
 ## 📄 License
 
